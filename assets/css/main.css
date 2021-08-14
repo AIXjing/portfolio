@@ -252,7 +252,7 @@ input, select, textarea {
 	}
 
 		.container.medium {
-			width: 75%;
+			width: 100%;
 			margin: 0 auto;
 		}
 
@@ -264,7 +264,7 @@ input, select, textarea {
 			}
 
 				.container.medium {
-					width: 75%;
+					width: 100%;
 					margin: 0 auto;
 				}
 
@@ -278,7 +278,7 @@ input, select, textarea {
 			}
 
 				.container.medium {
-					width: 750%;
+					width: 100%;
 					margin: 0 auto;
 				}
 
@@ -292,7 +292,7 @@ input, select, textarea {
 			}
 
 				.container.medium {
-					width: 75%;
+					width: 100%;
 					margin: 0 auto;
 				}
 
@@ -307,7 +307,7 @@ input, select, textarea {
 			}
 
 				.container.medium {
-					width: 75%;
+					width: 100%;
 				}
 
 		}
@@ -1243,7 +1243,7 @@ input, select, textarea {
 				}
 
 					.row > * {
-						padding: 25px 0 0 25px;
+						padding: 10px 10px 0 25px;
 					}
 
 					.row.gtr-uniform {
@@ -1437,7 +1437,7 @@ input, select, textarea {
 				}
 
 					.row.gtr-0 > * {
-						padding: 0px 0 0 0px;
+						padding: 25px 10px 0 25px;
 					}
 
 					.row.gtr-0.gtr-uniform {
@@ -1656,12 +1656,37 @@ input, select, textarea {
 		display: inline-block;
 		position: relative;
 	}
-/* 
-		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
-		} */
+
+	.image img {
+		display: block;
+		width: 100%;
+	}
+
+	.image.fit {
+		display: block;
+		width: 100%;
+	}
+
+	.image.featured {
+		display: block;
+		width: 100%;
+		margin: 0em 0 2em 0;
+	}
+
+	.image.left {
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+
+	.image.centered {
+		display: block;
+		margin: 0 0 2em 0;
+	}
+
+	.image.centered img {
+		margin: 0 auto;
+		width: auto;
+	}
 
 
 /* Button */
@@ -1983,7 +2008,7 @@ input, select, textarea {
 		}
 
 		.icon.featured {
-			color: #EA8A95;
+			color: #99b8cd;
 			display: block;
 			margin: 0 0 1.5em 0;
 			cursor: default;
@@ -2117,8 +2142,8 @@ input, select, textarea {
 	}
 
 	#top {
-		height: 90vh; 
-		padding: 0em;
+		height: auto; 
+		padding-top: 5em;
 	}
 
 		#top .image {
@@ -2128,15 +2153,10 @@ input, select, textarea {
 			margin: 0;
 		}
 
-			#top .image img {
+			/* #top .image img {
 				border-radius: 100%;
-			}
+			} */
 
-		#top .block {
-			/* display: flex; */
-			margin: 4em
-		}
-			
 		#top h1 {
 			margin-top: 0.35em;
 			margin-bottom: 0.5em;
@@ -2178,15 +2198,14 @@ input, select, textarea {
 		/* display: block; */
 	}
 
-/* 	#aboutme .container {
-		margin: 1em;
-		align-items: center;
+	#aboutme .intro {
+		padding: 2em 2em 2em 0em;
+		margin-left: 10%;
 	}
- */
 
-	#aboutme img {
+	/* #aboutme img {
 		padding: 1em;
-	}
+	} */
 
 	#aboutme p {
 		margin-right: 5em;
@@ -2194,6 +2213,12 @@ input, select, textarea {
 		text-align: left;
 		font-size: 1em;
 	}
+
+/* Portfolio */
+
+#portfolio .row {
+	padding: 25px 0 0 25px;
+}
 
 
 /* Copyright */
@@ -2270,11 +2295,11 @@ input, select, textarea {
 				padding: 8em 0;
 			}
 
-				#top .image {
+				/* #top .image {
 					width: 24em;
 					height: 24em;
 					margin: 0;
-				}
+				} */
 
 	}
 
