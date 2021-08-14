@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
 @import url("fontawesome-all.min.css");
 
 /*
@@ -8,7 +8,7 @@
 */
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h1, h2, h3, h4, h5, h6, p,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
@@ -37,13 +37,36 @@ ol, ul {
 	list-style: none;
 }
 
-blockquote, q {
-	quotes: none;
+
+blockquote {
+	margin: 2em 2em 1em 2em;
 }
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+	blockquote::before {
+		content:open-quote;
+		margin-right: .25em;
+		vertical-align: -.4em;
+	}
+
+	blockquote::after {
+		content:close-quote;
+		margin-left: .25em;
+		vertical-align: -.7em;
+	}
+	
+	
+	blockquote::before, blockquote::after {
+		color:#ccc;
+		font-size: 3em;
+		line-height: .1em;
+		font-family: 'Catamaran', sans-serif;
 	}
 
 table {
@@ -142,12 +165,12 @@ input, select, textarea {
 		top: -0.5em;
 		font-size: 0.8em;
 	}
-
+/* 
 	blockquote {
 		border-left: solid 0.75em #eee;
 		padding: 1em 0 1em 1.5em;
 		font-style: italic;
-	}
+	} */
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #3e3e3e;
@@ -1678,7 +1701,7 @@ input, select, textarea {
 		display: inline-block;
 		color: #fff !important;
 		text-decoration: none;
-		font-weight: 700;
+		/* font-weight: 700; */
 		border: 0;
 		outline: 0;
 		cursor: pointer;
@@ -1686,8 +1709,8 @@ input, select, textarea {
 		/* text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5); */
 		/* overflow: hidden; */
 		/* box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75); */
-		background-color: #ea8a95;
-		padding: 0.5em 0.7em 0.5em 0.7em;
+		background-color: #ea8a958f;
+		padding: 0.3em 0.7em 0.3em 0.7em;
 		margin: 0.5em 0.2em 0.5em 0.2em;
 		font-size: 0.5em;
 		/* max-width: 24em; */
@@ -2109,10 +2132,8 @@ input, select, textarea {
 	}
 
 	#top {
-		/* height: 100%; */
-		height: 100%;
-            margin: 0;
-		/* text-align: center; */
+		height: 100vh; 
+		padding: 0em;
 	}
 
 		#top .image {
@@ -2128,7 +2149,7 @@ input, select, textarea {
 
 		#top .block {
 			/* display: flex; */
-			width: 
+			margin: 5em
 		}
 			
 		#top h1 {
@@ -2144,13 +2165,15 @@ input, select, textarea {
 			font-size: 1.5rem;
 			color:#ea8a95;
 			/* margin: 0 0 0.5em 0; */
+			margin-bottom: 1em;
 		}
 
 		#top p {
-			font-size: 1.1em;
-			line-height: 1.75em;
+			font-size: 1.2em;
+			line-height: 2em;
 			color: #726d6d;
 			text-align: center;
+			margin:0.4em
 		}
 
 			#top p a {
@@ -2160,6 +2183,36 @@ input, select, textarea {
 	#contact footer {
 		font-size: 0.9em;
 	}
+
+	/* about me section	 */
+
+
+	#aboutme {
+		margin: 7em 0em 7em 0em;
+		background-color:#f3f3f3;
+	}
+
+	#aboutme .container {
+		margin: 2em;
+	}
+
+	#aboutme .left {
+		margin-bottom: 3%;
+	}
+
+
+	#aboutme img {
+		text-align: left;
+		font-size: 1em;
+	}
+
+	#aboutme p {
+		margin-top: 2.5em;
+		padding-left: 0em;
+		text-align: left;
+		font-size: 1em;
+	}
+
 
 /* Copyright */
 
